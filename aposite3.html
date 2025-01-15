@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apology to Ms. Rania</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #e3f2fd, #90caf9);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            color: #1976d2;
+            font-size: 2em;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+        p {
+            font-size: 1em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        ul {
+            text-align: left;
+            margin: 20px auto;
+            padding: 0;
+            max-width: 500px;
+            list-style-type: none;
+        }
+        ul li {
+            background: #e3f2fd;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        ul li:hover {
+            transform: translateX(10px);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background: #1976d2;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #0d47a1;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dear Ms. Rania,</h1>
+        <p>
+            Please allow me to extend my sincerest and most heartfelt apologies for missing your class yesterday. I deeply regret my absence, as I understand how much effort and passion you pour into every lesson. Your classes are not merely lectures; they are enlightening experiences that inspire critical thought and intellectual growth.
+        </p>
+        <p>
+            Missing even a single session feels like a personal loss to me. It was a thoughtless oversight on my part, and I cannot express enough how much I regret not being there. Your lessons are a cornerstone of my academic journey, and I truly value every opportunity to learn from your vast knowledge and expertise.
+        </p>
+        <p>
+            Reflecting on this, I recognize the gravity of my actions and the potential disruption they may have caused. I understand that punctuality and attendance are not just about being present but are a testament to respect and commitment. I deeply regret falling short of the standards you rightfully expect from your students.
+        </p>
+        <p>
+            To ensure that this does not happen again, I am taking the following steps:
+        </p>
+        <ul>
+            <li>Set a Catch-Up Schedule.</li>
+            <li>Proactively catching up on the material I missed by consulting classmates and reviewing your notes.</li>
+            <li>Establishing a stricter personal schedule to prioritize my responsibilities more effectively.</li>
+        </ul>
+        <p>
+            I deeply regret any inconvenience my absence may have caused you or my classmates. Please accept this apology as a reflection of my genuine remorse and my commitment to becoming a more diligent and reliable student.
+        </p>
+        <p>
+            Thank you for your understanding, patience, and continued guidance. It is a privilege to learn from you, and I am determined to prove my dedication moving forward.
+        </p>
+        <a href="#" class="button">Thank You for Your Understanding</a>
+    </div>
+    <script>
+        // Adding dynamic background color transitions
+        let colors = ['#e3f2fd', '#bbdefb', '#90caf9', '#64b5f6'];
+        let i = 0;
+        setInterval(() => {
+            document.body.style.background = `linear-gradient(to bottom, ${colors[i]}, ${colors[(i + 1) % colors.length]})`;
+            i = (i + 1) % colors.length;
+        }, 5000);
+
+        // Smooth scrolling for button
+        document.querySelector('.button').addEventListener('click', (e) => {
+            e.preventDefault();
+            alert("Thank you for taking the time to read this message.");
+        });
+    </script>
+</body>
+</html>
